@@ -16,7 +16,7 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifneq ($(filter j4corelte j4coreltejx ,$(TARGET_DEVICE)),)
+ifeq ($(TARGET_DEVICE),j4corelte)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE := libsdm-disp-apis
@@ -72,104 +72,6 @@ LOCAL_MODULE_CLASS := SHARED_LIBRARIES
 LOCAL_MODULE_SUFFIX := .so
 LOCAL_VENDOR_MODULE := true
 include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := ImsSettings
-LOCAL_MODULE_OWNER := samsung
-LOCAL_SRC_FILES := proprietary/app/ImsSettings/ImsSettings.apk
-LOCAL_CERTIFICATE := platform
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_CLASS := APPS
-LOCAL_DEX_PREOPT := false
-LOCAL_MODULE_SUFFIX := .apk
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := qcrilmsgtunnel
-LOCAL_MODULE_OWNER := samsung
-LOCAL_SRC_FILES := proprietary/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
-LOCAL_CERTIFICATE := platform
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_CLASS := APPS
-LOCAL_DEX_PREOPT := false
-LOCAL_MODULE_SUFFIX := .apk
-LOCAL_PRIVILEGED_MODULE := true
-include $(BUILD_PREBUILT)
-
-#include $(CLEAR_VARS)
-#LOCAL_MODULE := EpdgService
-#LOCAL_MODULE_OWNER := samsung
-#LOCAL_SRC_FILES := proprietary/priv-app/EpdgService/EpdgService.apk
-#LOCAL_CERTIFICATE := platform
-#LOCAL_MODULE_TAGS := optional
-#LOCAL_MODULE_CLASS := APPS
-#LOCAL_DEX_PREOPT := false
-#LOCAL_MODULE_SUFFIX := .apk
-#LOCAL_PRIVILEGED_MODULE := true
-#include $(BUILD_PREBUILT)
-
-#include $(CLEAR_VARS)
-#LOCAL_MODULE := imsservice
-#LOCAL_MODULE_OWNER := samsung
-#LOCAL_SRC_FILES := proprietary/priv-app/imsservice/imsservice.apk
-#LOCAL_CERTIFICATE := platform
-#LOCAL_MODULE_TAGS := optional
-#LOCAL_MODULE_CLASS := APPS
-#LOCAL_DEX_PREOPT := false
-#LOCAL_MODULE_SUFFIX := .apk
-#LOCAL_PRIVILEGED_MODULE := true
-#include $(BUILD_PREBUILT)
-
-#include $(CLEAR_VARS)
-#LOCAL_MODULE := ImsTelephonyService
-#LOCAL_MODULE_OWNER := samsung
-#LOCAL_SRC_FILES :=  proprietary/priv-app/ImsTelephonyService/ImsTelephonyService.apk
-#LOCAL_CERTIFICATE := platform
-#LOCAL_MODULE_TAGS := optional
-#LOCAL_MODULE_CLASS := APPS
-#LOCAL_DEX_PREOPT := false
-#LOCAL_MODULE_SUFFIX := .apk
-#LOCAL_PRIVILEGED_MODULE := true
-#include $(BUILD_PREBUILT)
-
-
-
-
-#include $(CLEAR_VARS)
-#LOCAL_MODULE := Perfdump
-#LOCAL_MODULE_OWNER := samsung
-#LOCAL_SRC_FILES := proprietary/vendor/app/Perfdump/Perfdump.apk
-#LOCAL_CERTIFICATE := platform
-#LOCAL_MODULE_TAGS := optional
-#LOCAL_MODULE_CLASS := APPS
-#LOCAL_DEX_PREOPT := false
-#LOCAL_MODULE_SUFFIX := .apk
-#LOCAL_VENDOR_MODULE := true
-#include $(BUILD_PREBUILT)
-
-#include $(CLEAR_VARS)
-#LOCAL_MODULE := RootPA
-#LOCAL_MODULE_OWNER := samsung
-#LOCAL_SRC_FILES := proprietary/vendor/app/RootPA/RootPA.apk
-#LOCAL_CERTIFICATE := platform
-#LOCAL_MODULE_TAGS := optional
-#LOCAL_MODULE_CLASS := APPS
-#LOCAL_DEX_PREOPT := false
-#LOCAL_MODULE_SUFFIX := .apk
-#LOCAL_VENDOR_MODULE := true
-#include $(BUILD_PREBUILT)
-
-#include $(CLEAR_VARS)
-#LOCAL_MODULE := SecProtect
-#LOCAL_MODULE_OWNER := samsung
-#LOCAL_SRC_FILES := proprietary/vendor/app/SecProtect/SecProtect.apk
-#LOCAL_CERTIFICATE := platform
-#LOCAL_MODULE_TAGS := optional
-#LOCAL_MODULE_CLASS := APPS
-#LOCAL_DEX_PREOPT := false
-#LOCAL_MODULE_SUFFIX := .apk
-#LOCAL_VENDOR_MODULE := true
-#include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE := TimeService
