@@ -605,7 +605,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/j4corelte/proprietary-msm8917/vendor/firmware/dbmd8_va_fw.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/dbmd8_va_fw.bin \
     vendor/samsung/j4corelte/proprietary-msm8917/vendor/firmware/leia_pfp_470.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/leia_pfp_470.fw \
     vendor/samsung/j4corelte/proprietary-msm8917/vendor/firmware/leia_pm4_470.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/leia_pm4_470.fw \
-    vendor/samsung/j4corelte/proprietary-msm8917/vendor/firmware/nfc/libpn553_fw.so:$(TARGET_COPY_OUT_VENDOR)/firmware/nfc/libpn553_fw.so \
     vendor/samsung/j4corelte/proprietary-msm8917/vendor/firmware/wlan/prima/WCNSS_cfg.dat:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/prima/WCNSS_cfg.dat \
     vendor/samsung/j4corelte/proprietary-msm8917/vendor/firmware/wlan/prima/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/prima/WCNSS_qcom_cfg.ini \
     vendor/samsung/j4corelte/proprietary-msm8917/vendor/firmware/wlan/prima/WCNSS_qcom_wlan_nv.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/prima/WCNSS_qcom_wlan_nv.bin \
@@ -1138,6 +1137,7 @@ PRODUCT_COPY_FILES += \
 #    vendor/samsung/j4corelte/proprietary-msm8917/vendor/bin/hw/macloader:$(TARGET_COPY_OUT_VENDOR)/bin/hw/macloader \
 
 
+    #vendor/samsung/j4corelte/proprietary-msm8917/vendor/firmware/nfc/libpn553_fw.so:$(TARGET_COPY_OUT_VENDOR)/firmware/nfc/libpn553_fw.so \
 PRODUCT_PACKAGES += \
     libantradio \
     libsdm-disp-apis \
